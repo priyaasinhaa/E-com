@@ -1,0 +1,605 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar{
+  background-color: rgba(249, 252, 247, 0.5);
+  height: 5.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+ }
+  nav{
+    flex: 1;
+    text-align: right;
+  }
+  nav ul{
+    display: inline-block;
+    list-style-type: none;
+  }
+  nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  a{
+   
+    text-decoration: none;
+    color: rgb(43, 39, 39);
+  }
+  a:hover{
+    background: #e4e4e4;
+  }
+
+  p{
+    color: #555;
+  }
+  /*.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+  }*/
+  .container{
+    width:100%;
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #SLIDE_BG h1{
+    margin-top: 0px;
+    font-weight: initial;
+  }
+
+  
+  #SLIDE_BG{
+    width: 100%;
+    height:100vh ;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBG  20s linear  infinite alternate;
+    animation-timing-function:ease-in-out;
+    background-image: url('images/back1.jpg');
+  }
+#SLIDE_BG h1{
+  text-align: center ;
+  padding-top: 230px;
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+
+  @keyframes slideBG{
+    0%{
+      background-image: url('images/back2.jpg');
+    }
+    33%{
+      background-image: url('images/back3.jpg');
+    }
+    66%{
+      background-image: url('images/back2.jpg');
+    }
+  }
+
+  .btn{
+    display: inline-block;
+    color: black;
+    border: 3px solid #fff;
+    padding: 8px 40px;
+    margin-top:50px;
+    margin-left: 650px;
+    transition: background 0.5s;
+    letter-spacing: 3.5px;
+
+  }
+  .btn:hover{
+    backgrounD:#e5e5e5 ;
+  }
+  .header{
+    background: radial-gradient( #fff,#a6aa9c)
+  }
+  .container-1{
+  background-color: rgba(249, 252, 247, 0.5); height: 4.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right:50px;
+  padding-left: 50px;
+  font-size: 15px;
+ }
+    
+  
+  .categories{
+    margin: 20px 0;
+  }
+  .categories{
+    background: radial-gradient( #fff,#f4eddd)
+  }
+  .col-3{
+    flex-basis:30%; 
+    min-width: 250px;
+    flex-direction: row;
+   }
+  .col-3 img{
+    width:100%;
+  }
+  .small-container{
+    max-width:1080px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .butt{
+    display: inline-block;
+    color: black;
+    border: 3px solid #fff;
+    padding: 8px 40px;
+    background:#d49a89;
+    transition: background 0.5s;
+    letter-spacing: 3.5px;
+    margin-left: 60px;
+  }
+  .butt:hover{
+    backgrounD:#e9b9b9 ;
+  }
+  .col-4{
+    flex-basis: 25%;
+    flex-direction: row;
+    padding: 30px;
+    min-width:250px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+  }
+  .col-4 img{
+    width: 100%;
+  }
+  .col-4:hover{
+    transform:scale(1.2);
+  }
+
+  .title{
+    text-align: center;
+    margin: 0 auto 80px;
+    margin-top: 60px;
+    position: relative;
+    line-height: 60px;
+    letter-spacing: 3px;
+    color: #555;
+  }
+  .title::after{
+    content:'';
+    background:#d49a89 ;
+    width: 80px;
+    height:5px ;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+   
+  #OFFER{
+    background: #f4eddd;
+    background-position: center center;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    background-image: url('images/offer.jpeg');
+    width: 100%;
+    margin-bottom: 80px;
+  }
+#OFFER h1{
+  text-align:center ;
+  color: #fff;
+  padding-top: 180px;
+  padding-bottom:30px;
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+#OFFER h3{
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 5px;
+  padding-left: 20px;
+  letter-spacing: 1px;
+}
+.butn{
+  
+    color: black;
+    border: 3px solid #fff;
+    padding: 8px 40px;
+    background:#d49a89;
+    transition: background 0.5s;
+    letter-spacing: 3.5px;
+    margin-left: 700px;
+    
+  }
+  .butn:hover{
+    backgrounD:#e9b9b9 ;
+  }
+
+  /*------FOOTER------*/
+
+.footer{
+  background: #e4e4e4;
+  color: #555;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p{
+  color: black;
+}
+.footer h3{
+  color: #555;
+  margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+  min-width: 250px;
+  margin-bottom: 20px;;
+}
+.footer-col-1{
+  flex-basis: 30%;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.footer-col-2{
+  flex:1;
+  text-align: center;
+  padding-right: 80px;
+}
+.footer-col-2 img{
+  width: 100px;
+  margin-bottom: 20px;
+}
+.footer-col-3,.footer-col-4{
+  flex-basis: 12%;
+  text-align: left;
+}
+.footer-col-3 ul li{
+  line-height: 1.7em;
+
+}
+
+ul{
+  list-style-type: none;
+}
+.fa {
+  padding: 10px;
+  font-size: 2px;
+  width: 37px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: rgb(209, 94, 28);
+  color: white;
+}
+
+.app-logo img{
+width: 120px;
+}
+.footer hr{
+  border: none;
+  background:#555 ;
+  height:1px ;
+  margin: 20px 80px;
+  
+}
+.copyright{
+  text-align: center;
+}
+
+/*----PAGE BUTTON----*/
+
+.page-btn{
+  margin:0 auto 60px;
+
+}
+.page-btn span{
+  display: inline-block;
+  border: 1px solid #d49a89;
+  margin-left: 10px;
+  width: 40px;
+  height:40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.page-btn span:hover{
+  background: #f4eddd;
+}
+
+/*----MY ACCOUNT----*/
+.account-page{
+  padding: 50px 0;
+  background: radial-gradient( #fff, #ebecf1);
+}
+
+
+
+.form-container{
+  background: #eeeeee;
+  width: 400px;
+  height:500px ;
+  position: relative;
+  text-align: center;
+  padding: 50px 0;
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgb(0,0,0, 0.2);
+  overflow: hidden;
+}
+.but{
+    display: inline-block;
+    color: black;
+    border: 3px solid #555;
+    border-width: 0.5px;
+    padding: 8px 40px;
+    margin-left: 30px;
+    transition: background 0.5s;
+    letter-spacing: 3.5px;
+    background: #ccafaf;
+}
+.but:hover{
+    backgrounD:#eae7d9 ;
+}
+.form-container span{
+  font-weight: bold;
+  padding: 0px 10px;
+  color: #555;
+  cursor: pointer;
+  width:100px;
+  display: inline-block; 
+}
+.form-btn{
+  display: inline-block;
+}
+.form-container form{
+  max-width:300px;
+  padding: 0 20px;
+  position: absolute;
+  top:130px;
+  transition: transform 1s;
+}
+.form input{
+  width: 200%;
+  height:50px ;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #d49a89;
+}
+.form-btn{
+  width:100%;
+  border:none;
+  cursor: pointer;
+  margin: 10px 0;
+
+}
+form .but{
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+form .but:focus{
+  outline: none;
+}
+
+#LoginForm{
+  left: -300px;
+
+}
+#SignForm{
+  left: 0;
+}
+.form a{
+  font-size: 12px;
+}
+#Indicator{
+  width: 100px;
+  border: none;
+  background: #ccafaf;
+  height:3px ;
+  margin-top: 8px;
+  transform: translateX(100px);
+  transition: transform 1s;
+}
+.account-page .container .row .col-2 .first{
+  
+  padding-top: 50px;
+  width: 500px;
+  height: 400px;
+}
+.account-page .container .row .col-2 .first h1{
+  padding-bottom: 50px;
+  letter-spacing: 3px;
+}
+
+/*.account-page .container .row .col-2 .first{
+  min-width: 500px;
+  min-height:600px;
+  background: url('images/acc.jpeg');
+  opacity: 0.7;
+}
+.account-page .container .row .col-2 .first h1{
+  margin-left: 40px;
+}*/
+
+.about{
+  width: 100%;
+  height:300px ;
+}
+.about h2{
+  text-align: center;
+  padding-top:60px;
+  padding-right:300px;
+  padding-left: 300px;
+  padding-bottom:5px;
+  font-size: 21px;
+  letter-spacing: 1.5px;
+  font-weight: initial;
+}
+.about h4{
+  text-align: center;
+  padding-top:5px;
+  padding-right:150px;
+  padding-left: 150px;
+  padding-bottom:20px;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  font-weight: lighter;
+}
+
+
+ .butto{
+    display: inline-block;
+    color: black;
+    border: 3px solid #fff;
+    padding: 8px 40px;
+    background:#bfdcae;
+    transition: background 0.5s;
+    letter-spacing: 3.5px;
+    margin-left: 30px;
+}
+.butto:hover{
+    backgrounD:#e9b9b9 ;
+  }
+
+/*-----CONTACT US-------*/
+
+.contact-title{
+  text-align: center;
+  margin-top:0px;
+  padding-top: 70px;
+  color: #555;
+  letter-spacing: 3px;
+  transition: all 4s ease-in-out;
+  background: linear-gradient(#f5f1da,#fff);
+}
+
+.contact-form{
+  margin-left: 470px;
+  margin-top: 50px;
+}
+
+.form-control{
+  width: 600px;
+  border: none;
+  background: transparent;
+  outline: none;
+  border-bottom: 1px solid #bfdcae;
+  color: #1b262c;
+  font-size: 18px;
+  margin-bottom: 16px;
+
+}
+input{
+  height: 35px;
+  padding: 10px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+form .submit{
+  background: #bfdcae;
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing:2px;
+  height: 50px;
+  margin-top: 20px;
+}
+form .submit:hover{
+  background-color: #d49a89;
+  cursor: pointer;
+}
+
+  
+.contact-body{
+  background: linear-gradient(#fff,#f5f1da);
+  margin-top: 60px;
+  margin-bottom: 0px;
+  padding-bottom: 40px;
+}
+.contact-body h4,h5{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px; 
+}
+.office{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #e0ece4;
+}
+.office h4 ,h5{
+  text-align: center;
+  
+}
+/*-------SINGLE PRODUCT DETAILS-----*/
+.single-product{
+  margin-top: 80px;
+}
+.single-product col-2 img{
+  padding: 0;
+}
+.single-product col-2{
+  padding: 20px;
+}
+.single-product h4{
+  margin: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.single-product select{
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+}
+.single-product input{
+  width: 50px;
+  height:40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid #555;
+}
+input:focus{
+  outline: none;
+}
+.small-img-row{
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col{
+  flex-basis: 30%;
+  cursor: pointer;
+}
